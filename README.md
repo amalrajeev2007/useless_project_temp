@@ -10,29 +10,29 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
+- Team Lead: [AMAL RAJEEV] - [GOVERNMENT ENGINEERING COLLEGE THRISSUR]
 - Member 2: [Name] - [College]
 - Member 3: [Name] - [College]
 
 ### Project Description
-[2-3 lines about what your project does]
+[An interactive web-based investigation tool that scans newspaper obituary pages using OCR and image preprocessing to detect, extract, and display the highest recorded age on the page.]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Help the young kids or even some adults who looks the obituary pages to find the highest age number fastly  ]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[I created a simple interactive webpage with OCR helping identify the highest age and beautiful front end using html,java,css]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [java,css,html]
+- [None]
+- [Tesseract.js]
+- [VS Code, GitHub Desktop, Vercel]
 
 For Hardware:
-- [List main components]
+- [none]
 - [List specifications]
 - [List tools required]
 
@@ -48,7 +48,7 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+![](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
 ![Screenshot2](Add screenshot 2 here with proper name)

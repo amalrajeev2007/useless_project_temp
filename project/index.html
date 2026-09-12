@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curious Mind</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tesseract OCR Library -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <div id="splash">
+
+        <div class="paper-noise"></div>
+
+        <div class="magnifier">
+            <div class="glass"></div>
+        </div>
+
+        <div class="splash-content">
+
+            <div class="tiny-text">
+                A LITTLE INVESTIGATION...
+            </div>
+
+            <h1>
+                I KNOW IT'S HARSH...
+            </h1>
+
+            <p id="typing-text"></p>
+
+            <div class="divider"></div>
+
+            <button id="enter-btn">
+                ENTER THE CURIOUS MIND
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="floating-paper paper-1">WHO?</div>
+        <div class="floating-paper paper-2">HOW OLD?</div>
+        <div class="floating-paper paper-3">WHY?</div>
+
+    </div>
+
+
+    <!-- MAIN PAGE -->
+    <main id="main-page">
+
+        <nav>
+            <div class="logo">
+                <span>◉</span> CURIOUS MIND
+            </div>
+
+            <div class="nav-text">
+                A CHILD'S INVESTIGATION
+            </div>
+        </nav>
+
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">
+                    📰 NEWSPAPER INVESTIGATION
+                </p>
+
+                <h2>
+                    SOMETIMES,
+                    <br>
+                    <span>QUESTIONS</span>
+                    <br>
+                    COME FIRST.
+                </h2>
+
+                <p class="description">
+                    A curious mind doesn't see a newspaper as just
+                    words and pictures. It sees mysteries waiting
+                    to be discovered.
+                </p>
+
+                <button class="upload-btn" id="start-investigation">
+                    START INVESTIGATING
+                    <span>↗</span>
+                </button>
+
+            </div>
+
+
+            <div class="newspaper">
+
+                <div class="newspaper-header">
+                    THE DAILY
+                </div>
+
+                <div class="newspaper-line"></div>
+
+                <h3>
+                    OBITUARY
+                </h3>
+
+                <div class="newspaper-columns">
+
+                    <div>
+                        <div class="fake-line long"></div>
+                        <div class="fake-line"></div>
+                        <div class="fake-line medium"></div>
+                        <div class="fake-line"></div>
+                    </div>
+
+                    <div>
+                        <div class="fake-line"></div>
+                        <div class="fake-line long"></div>
+                        <div class="fake-line"></div>
+                        <div class="fake-line medium"></div>
+                    </div>
+
+                </div>
+
+                <div class="magnifying-circle"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- UPLOAD PAGE -->
+    <section id="upload-page">
+
+        <div class="upload-container">
+
+            <div class="upload-top">
+
+                <p class="eyebrow">
+                    STEP 01 — FIND THE CLUE
+                </p>
+
+                <h2>
+                    WHAT DID
+                    <br>
+                    <span>YOU FIND?</span>
+                </h2>
+
+                <p class="upload-description">
+                    Upload a clear photograph of the newspaper
+                    death notice. Let the curious mind investigate.
+                </p>
+
+            </div>
+
+
+            <!-- UPLOAD BOX -->
+            <div id="drop-zone">
+
+                <div class="upload-icon">
+                    +
+                </div>
+
+                <h3>
+                    DROP THE NEWSPAPER HERE
+                </h3>
+
+                <p>
+                    or
+                </p>
+
+                <label for="image-input" class="choose-file">
+                    CHOOSE AN IMAGE
+                </label>
+
+                <input
+                    type="file"
+                    id="image-input"
+                    accept="image/*"
+                    hidden
+                >
+
+                <small>
+                    JPG · PNG · WEBP
+                </small>
+
+            </div>
+
+
+            <!-- IMAGE PREVIEW -->
+            <div id="preview-container">
+
+                <p class="preview-title">
+                    YOUR CLUE
+                </p>
+
+                <img id="image-preview" src="" alt="Newspaper preview">
+
+                <button id="continue-btn">
+                    BEGIN INVESTIGATION
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <button id="back-btn">
+                ← GO BACK
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSPAPER STORY ANIMATION -->
+    <section id="story-animation">
+
+        <!-- SCENE 1 : KERALA MORNING -->
+        <div class="story-scene" id="scene-kerala">
+
+            <div class="morning-sky"></div>
+
+            <!-- Kerala house -->
+            <div class="kerala-house">
+
+                <div class="roof"></div>
+
+                <div class="house-body">
+
+                    <div class="window"></div>
+
+                    <div class="door"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Coconut trees -->
+            <div class="tree tree-one">
+                🌴
+            </div>
+
+            <div class="tree tree-two">
+                🌴
+            </div>
+
+            <!-- Road -->
+            <div class="road"></div>
+
+            <div class="scene-caption">
+                7:02 AM — AN ORDINARY MORNING
+            </div>
+
+        </div>
+
+
+        <!-- SCENE 2 : FIRST PERSON -->
+        <div class="story-scene" id="scene-reading">
+
+            <div class="room-background"></div>
+
+            <div class="hands left-hand"></div>
+            <div class="hands right-hand"></div>
+
+            <div class="first-person-paper">
+
+                <div class="fake-paper-title">
+                    THE DAILY
+                </div>
+
+                <div class="fake-paper-line"></div>
+
+                <div class="fake-paper-columns">
+
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+                <div class="paper-headline">
+                    MORNING NEWS
+                </div>
+
+            </div>
+
+            <div class="reading-caption">
+                WHAT'S INSIDE?
+            </div>
+
+        </div>
+
+
+        <!-- SCENE 3 : FLIPPING -->
+        <div class="story-scene" id="scene-flipping">
+
+            <div class="flip-room"></div>
+
+            <div class="flip-paper">
+
+                <div class="page-front">
+                    PAGE 01
+                </div>
+
+                <div class="page-back">
+                    PAGE 02
+                </div>
+
+            </div>
+
+            <div class="flip-caption">
+                THERE'S ALWAYS ANOTHER PAGE...
+            </div>
+
+        </div>
+
+
+        <!-- SCENE 4 : FINAL NEWSPAPER -->
+        <div class="story-scene" id="scene-final">
+
+            <div class="final-title">
+                AND THEN...
+            </div>
+
+            <div class="final-paper-wrapper">
+
+                <img
+                    id="story-final-image"
+                    src=""
+                    alt="Uploaded newspaper"
+                >
+
+            </div>
+
+            <div class="final-caption">
+                THIS IS WHERE THE INVESTIGATION BEGINS.
+            </div>
+
+        </div>
+
+
+        <!-- SCENE 5 : THE CHAMPION WINNER -->
+        <div class="story-scene" id="scene-result">
+            <div class="result-card">
+                <div class="stamp">HIGHEST SCORE</div>
+                <p class="result-eyebrow">INVESTIGATION COMPLETE</p>
+                <h2 class="winner-title">WE HAVE A WINNER</h2>
+
+                <div class="score-display">
+                    <span id="winner-age">--</span>
+                    <small>YEARS OLD</small>
+                </div>
+
+                <p id="winner-context" class="winner-snippet">
+                    "Scanning records..."
+                </p>
+
+                <button id="restart-btn">
+                    INVESTIGATE ANOTHER PAGE <span>↺</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
